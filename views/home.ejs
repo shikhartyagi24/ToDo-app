@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/layout.css">
+    <body>
+        <div id="box">
+                <h1>TODO App</h1>
+                <hr>
+                <!-- todo details -->
+                <form action="/todolist" method="POST">
+                    <label for="description">DESCRIPTION</label><br>
+                    <input type="text" name='description' placeholder="What do you need to do?" required> 
+                    <hr>
+                    <label  id='half' for="category">CATEGORY</label>
+                    <label for="date"> DUE DATE</label><br>
+                    <select name="category">
+                        <option value="">Choose a category</option>
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                        <option value="School">School</option>
+                        <option value="Cleaning">Cleaning</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="date" name='date'><hr>
+                  <button class="button" type="submit"><i class="fa fa-plus" aria-hidden="true"></i>ADD TASK</button> 
+
+                </form>
+                <!-- delte the list that has done -->
+                <form action="/delete" method="POST">
+                    <button  class="dbutton" type="submit"><i class="fa fa-trash" aria-hidden="true"></i>DELETE TASK</button>
+                    <%for(let i of todolist){%>
+                        <hr>   
+                           <div id="item">
+                            <input  type="checkbox" name="iddd" value="<%=i.id%>">
+                           
+                
+                               <div id="list-desc-date">
+                                   <div id="top">
+                                        <%=i.description%>
+                                   </div>
+                                   <div id="down">
+                                    <i class="fa fa-calendar-o" aria-hidden="true"></i> <%=i.date%>
+                                   </div>
+                               </div>
+                               <div class="cate" id="<%=i.category%>">
+                                     <%=i.category%>
+                                </div>
+                           </div>   
+                    <%}%>
+                    <br>
+                    <br>
+                </form>
+               
+        </div>
+    </body>

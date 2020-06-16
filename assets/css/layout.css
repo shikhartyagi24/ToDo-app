@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+  
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* todo app box styling */
+#box{
+    width: 100vh;
+    height: auto;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
+    position: relative;
+}
+/* heading for todo app  */
+h1{
+    color: rgb(100, 97, 97);
+    font-size: 4vh;
+    text-align: center;
+    font-weight: 100;
+    word-spacing: 2px;
+    letter-spacing:0.8px;
+    padding-top: 24px;
+    padding-bottom: 7px;
+}
+hr{
+    border-color:cornsilk;
+}
+/* input form styling */
+input{
+    border:hidden;
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 20px;
+}
+input:focus{
+    outline: none;
+}
+select{
+    border: hidden;
+    margin-left: 20px;
+    /* margin-top: 6px; */
+    width: 45%;
+    height: 30px;
+}
+select:focus{
+    outline: none;
+}
+input[type=date]{
+    width: 40%;
+}
+#half{
+    margin-right: 36%;
+    width: 100%;
+}
+option{
+    /* border: hidden; */
+    outline: none;
+}
+label{
+    padding-left: 20px;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding-top: 7px;
+}
+/* add list button  */
+.button {
+    background-color: rgb(74, 74, 74);
+    border: none;
+    color: whitesmoke;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 190px;
+    margin-right: 0px;
+    cursor: pointer;
+    
+  }
+  /* delete botton */
+  .dbutton {
+    background-color: rgb(228, 24, 24);
+    border: none;
+    width:170px;
+    color: whitesmoke;
+    padding-top: 15px ;
+    padding-bottom: 15px;
+    /* padding-left: 12px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 190px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: fixed;
+    
+  }
+  .button i{
+      padding-right: 15px;
+  }
+  .dbutton i{
+    padding-right: 15px;
+}
+  #list-desc-date{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      justify-content: space-between;
+      /* align-items: center; */
+      margin-left: 28px;
+  }
+  .cate{
+    font-size: 16px;
+    /* background-color: violet; */
+    text-align: center;
+    text-decoration: none;
+    padding-right: 8px;
+    width: 100px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    margin-right: 10px;
+    /* margin-left: 70%; */
+    height: fit-content;
+
+    
+
+
+  }
+  /* color type for different category/ */
+  #Work{
+      background-color: violet;
+  }
+  #School{
+      background-color: blue;
+  }
+  #Cleaning{
+      background-color: chartreuse;
+  }
+  #Personal{
+      background-color: aqua;
+  }
+  #Other{
+      background-color: brown;
+  }
+  #item{
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      /* justify-content: space-between; */
+      /* align-items: center; */
+    
+  }
+  /* list to be done styling */
+  input[type=checkbox]{
+      margin-top: 4px;
+      margin-left: 8px;
+  }
+  form{
+      display:inline;
+  }
+  #top{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight:lighter;
+  }
+  #down{
+      padding-top: 6px;
+    font-size: 13px;
+  }
